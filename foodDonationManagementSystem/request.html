@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Food - FoodShare</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+      <img src="images/logo.png" width="40" height="40" class="me-2 rounded-circle border border-light">
+      FoodShare
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="donate.html">Donate</a></li>
+        <li class="nav-item"><a class="nav-link active" href="request.html">Request</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero text-white">
+  <img src="images/request.jpg" class="hero-bg" alt="">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content container text-center">
+    <h1 class="display-5 fw-bold">Request <span class="text-warning">Food</span></h1>
+    <p class="lead mt-2">We are here to help. Request food for your community or organization.</p>
+  </div>
+</header>
+
+<!-- Request Form Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="mx-auto p-4 p-md-5 shadow stat-card" style="max-width:650px;">
+      <h3 class="text-center text-success fw-bold mb-4">Food Request Form</h3>
+
+      <form>
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Organization / Person Name</label>
+          <input type="text" class="form-control" placeholder="Enter requester name" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Food Requirement</label>
+          <select class="form-select" required>
+            <option value="">Choose...</option>
+            <option>Cooked Food</option>
+            <option>Packaged Food</option>
+            <option>Raw Ingredients</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Quantity Needed</label>
+          <input type="number" class="form-control" placeholder="Approx. in kg or packets" required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Delivery / Pickup Address</label>
+          <textarea class="form-control" rows="3" placeholder="Full delivery or pickup address" required></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Contact Number</label>
+          <input type="tel" class="form-control" placeholder="Enter active contact number" required>
+        </div>
+
+        <button type="submit" class="btn btn-warning w-100 py-2 fw-semibold">
+          Submit Request
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-success text-white text-center py-3">
+  <p class="mb-0">© 2025 FoodShare • Designed by Students for Social Good</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* Base */
+:root { --brand:#198754; }
+*{ box-sizing:border-box; margin:0; padding:0; }
+body{
+  font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:#fff;
+  color:#222;
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  height:85vh;
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  overflow:hidden;
+  background:#000;
+}
+
+.hero-bg{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center top;
+  filter:brightness(0.74); /* 👌 perfect visibility */
+  z-index:1;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.60));
+  z-index:2;
+}
+
+.hero-content{
+  position:relative;
+  z-index:3;
+  max-width:650px;
+  color:#fff;
+}
+
+/* Wave Separator */
+.hero-bottom-wave{
+  position:absolute;
+  left:0; right:0; bottom:-1px;
+  height:70px;
+  background: radial-gradient(100% 130% at 50% 0, #fff 60%, transparent 61%) bottom/200% 70px repeat-x;
+  z-index:4;
+}
+
+/* Stats Cards */
+.lift{ transition:transform .25s ease, box-shadow .25s ease; }
+.lift:hover{ transform:translateY(-6px); box-shadow:0 1rem 2rem rgba(0,0,0,.12); }
+
+.icon-badge{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:48px; height:48px; border-radius:50%;
+}
+
+.bg-success-subtle{ background:rgba(25,135,84,.15); }
+
+.stat-card{
+  background:#fff;
+  border-radius:18px;
+  padding:24px;
+  box-shadow:0 .5rem 1rem rgba(0,0,0,.06);
+}
+
+/* CTA Banner */
+.cta-band{
+  background:linear-gradient(90deg, var(--brand), #1fa065);
+  color:#fff;
+}
+
+/* Navbar Hover */
+.nav-link{
+  transition:color .2s ease;
+}
+.nav-link:hover,
+.nav-link.active{
+  color:#fff !important;
+  text-decoration:underline;
+}
+
+/* Button Styling */
+.btn-warning{
+  font-weight:600;
+  border-radius:8px;
+}
+
+.btn-outline-light{
+  font-weight:600;
+  border-radius:8px;
+}
